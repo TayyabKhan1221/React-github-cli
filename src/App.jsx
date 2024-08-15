@@ -7,203 +7,258 @@ import "./App.css";
 function App() {
   return (
     <>
-      <nav className="nav">
-        <div className="nav-left">
-          <i className="fa-brands fa-github"></i>
-          <span className="cli-style">CLI</span>
-        </div>
-        <ul>
-        <li>Manual</li>
-        <li>Release note</li>
-      </ul>
+      <div className="main1">
+        <div className="header">
+          <div className="header-first">
+            <a href="#"></a>
 
-        
-      </nav>
-      <div className="section-2">
-        <div className="border">
-          <div className="main-heading">
-            <h1>
-              Take GitHub to the <br />
-              command line
-            </h1>
+            <span className="span">
+              <a href="#">CLI</a>
+            </span>
           </div>
-          <div className="para-1">
-            <p>
-              GitHub CLI brings GitHub to your terminal. Free and <br />
-              open source.
+          <div className="header-second">
+            <ul className="header-second-ul">
+              <li>
+                <a href="#">Manual</a>
+              </li>
+              <li>
+                <a href="#">Release notes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="main">
+        <div className="main-section1">
+          <div className="section1">
+            <h1 className="section1-heading">
+              Take GitHub to the command line
+            </h1>
+            <p className="section1-paragraph">
+              GitHub CLI brings GitHub to your terminal. Free and open source.
+            </p>
+            <button className="section1-button">
+              <a href="#">Download for Window</a>
+            </button>
+            <p className="section-par">View installation instructions →</p>
+          </div>
+        </div>
+        <div className="main-section2">
+          <div className="section2">
+            <p className="aligncenter">View your pull requests’ checks.</p>
+          </div>
+          <div className="section-screenshot">
+            <br />
+            <br />
+            <p>$ gh release create 1.0</p>
+            <br />
+            <h3>? Title GitHub CLI 1.0</h3>
+            <br />
+            <p className="screenshot-paragraph">? Release notes Write my own</p>
+            <p className="screenshot-paragraph">? Is this a prerelease? No</p>
+            <p className="screenshot-paragraph">? Submit? Publish release</p>
+            <p className="screenshot-paragraph">
+              https://github.com/octocat/.github/releases/tag/1.0
             </p>
           </div>
-          <div className="style-1">
-            <button className="btn-1">
-              <span className="style-2">Download for Windows</span>
-            </button>
-          </div>
-          <div className="para-img">
-            <p>View installation instructions</p>
-            <span>
-              <i className="fa-solid fa-arrow-right"></i>
-            </span>
-          </div>
+          <p className="section2-graph">View all GitHub CLI commands →</p>
         </div>
-      </div>
-      <div className="main-panel">
-        <div className="main">
-          <ol className="option">
-            <li>
-              <span>$ gh release create</span>
-            </li>
-            <li>
-              <span>$ gh repo view</span>
-            </li>
-            <li>
-              <span>$ gh alias set</span>
-            </li>
-            <li>
-              <span>$ gh issue list</span>
-            </li>
-          </ol>
-          <ol className="option option-1">
-            <li>Create a new release.</li>
-            <li>View repository READMEs</li>
-            <li>Create a shortcut for a gh command.</li>
-            <li>View and filter a repository’s open issues.</li>
-          </ol>
-        </div>
-
-        <div className="main-mid">
-          <div className="mid-box">
-            <span className="flex">
-              <div className="circle">
-                <div className="box"></div>
-                <div className="box"></div>
-                <div className="box"></div>
-              </div>
-              <div className="pause">
-                <i className="fa-solid fa-pause"></i>
-              </div>
-            </span>
-            <div className="main-text-2">
-              <div className="main-1">
-                <p className="text-5">
-                  $ gh pr checks <br />
-                  All checks were successful <br />
-                  1 failing, 3 successful, and 1 pending checks <br />- CodeQL
-                  3m43s{" "}
-                  <a href="https://github.com/cli/cli/runs/123">
-                    https://github.com/cli/cli/runs/123
-                  </a>
-                  <br />✓ build (macos-latest) 4m18s{" "}
-                  <a href="https://github.com/cli/cli/runs/123">
-                    https://github.com/cli/cli/runs/123
-                  </a>
-                  <br />✓ build (ubuntu-latest) 1m23s{" "}
-                  <a href="https://github.com/cli/cli/runs/123">
-                    https://github.com/cli/cli/runs/123
-                  </a>
-                  <br />✓ build (windows-latest) 4m43s{" "}
-                  <a href="https://github.com/cli/cli/runs/123">
-                    https://github.com/cli/cli/runs/123
-                  </a>
-                  <br />× lint 47s{" "}
-                  <a href="https://github.com/cli/cli/runs/123">
-                    https://github.com/cli/cli/runs/123
-                  </a>
-                </p>
-              </div>
+        <div className="main-section3">
+          <h1 className="section3-heading1">
+            Goodbye, context switching. Hello, terminal.
+          </h1>
+          <div className="column-section">
+            <div className="section3">
+              <h3 className="section3-heading">Your entire GitHub workflow</h3>
+              <p className="section3-paragraph">
+                Work with issues, pull requests, checks, releases and more.
+              </p>
+              <span className="section3-span">
+                <a href="#">View all GitHub CLI commands →</a>
+              </span>
+            </div>
+            <div className="section4">
+              <h3 className="section3-heading">Script and customize</h3>
+              <p className="section3-paragraph">
+                Call the GitHub API to script almost any action, and set a
+                custom alias for <br />
+                any command.
+              </p>
+              <span className="section3-span">
+                <a href="#">Learn about aliases and API →</a>
+              </span>
+            </div>
+            <div className="section5">
+              <h3 className="section3-heading">Enterprise-ready</h3>
+              <p className="section3-paragraph">
+                Connect to GitHub Enterprise Server in addition to GitHub.com.
+              </p>
+              <span className="section3-span">
+                <a href="#">Get set up with Enterprise →</a>
+              </span>
+            </div>
+            <div className="section6">
+              <h3 className="section3-heading">We &lt;3 community </h3>
+              <p className="section3-paragraph">
+                GitHub CLI is open source and ready for your contributions.
+              </p>
+              <span className="section3-span">
+                {" "}
+                <a href="#">Contribute to CLI →</a>
+              </span>
             </div>
           </div>
         </div>
-        <div className="footer-heading">
-          <h2>View All Github CLI Commands</h2>
+        <div className="main-section4">
+          <div className="section7">
+            <h2 className="section7-heading">Try GitHub on the command line</h2>
+            <p className="section7-paragraph">
+              GitHub CLI brings GitHub to your terminal. Free and open source.
+            </p>
+            <button className="section7-button">
+              <a href="#">Download for Window</a>
+            </button>
+            <p className="section7-paragraph2">
+              View installation instructions →
+            </p>
+          </div>
         </div>
       </div>
-      <div className="footer-2">
-        <div className="heading-2">
-          <h1>
-            Goodbye, context switching. <br />
-            Hello, terminal.
+      <div className="main-section5">
+        <div className="section8">
+          <h1 className="section8-heading">
+            <a href="#">Github</a>
           </h1>
         </div>
+        <div className="section9">
+          <h4 className="main-section5-heading">Product</h4>
+          <ul className="section9-ul">
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">Security</a>
+            </li>
+            <li>
+              <a href="#">Enterprise</a>
+            </li>
+            <li>
+              <a href="#">Customer stories</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Resources</a>
+            </li>
+          </ul>
+        </div>
+        <div className="section10">
+          <h4 className="main-section5-heading">Platform</h4>
+          <ul className="section10-ul">
+            <li>
+              <a href="#">Developer API</a>
+            </li>
+            <li>
+              <a href="#">Partners</a>
+            </li>
+            <li>
+              <a href="#">Atom</a>
+            </li>
+            <li>
+              <a href="#">Electron</a>
+            </li>
+            <li>
+              <a href="#">GitHub Desktop</a>
+            </li>
+          </ul>
+        </div>
+        <div className="section11">
+          <h4 className="main-section5-heading">Support</h4>
+          <ul className="section11-ul">
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">Community Forum</a>
+            </li>
+            <li>
+              <a href="#">Professional Services</a>
+            </li>
+            <li>
+              <a href="#">Learning Lab</a>
+            </li>
+            <li>
+              <a href="#">Status</a>
+            </li>
+            <li>
+              <a href="#">Contact GitHub</a>
+            </li>
+          </ul>
+        </div>
+        <div className="section12">
+          <h4 className="main-section5-heading">Company</h4>
+          <ul className="section12-ul">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Careers</a>
+            </li>
+            <li>
+              <a href="#">Press</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="footer-3">
-        <div className="box-2">
-          <h3>Your entire GitHub workflow</h3>
-          <p className="para-9">
-            Work with issues, pull requests, checks, <br />
-            releases and more.
-          </p>
-          <p>View all GitHub CLI commands</p>
-        </div>
-        <div className="box-2">
-          <h3>Script and customize</h3>
-          <p className="para-9">
-            Call the GitHub API to script almost any <br />
-            action, and set a custom alias for any <br />
-            command.
-          </p>
-          <p>Learn about alias API</p>
-        </div>
-        <div className="box-2">
-          <h3>Enterprise-ready</h3>
-          <p className="para-9">
-            Connect to GitHub Enterprise Server in <br />
-            addition to GitHub.com.
-          </p>
-          <p>Get set up for Enterprise</p>
-        </div>
-        <div className="box-2">
-          <h3>We &lt;3 community</h3>
-          <p className="para-9">
-            GitHub CLI is open source and ready for your <br />
-            contributions.
-          </p>
-          <p>Contribute to CLI</p>
-        </div>
-      </div>
-      <div className="bk-img">
-        <div className="box-7">
-          <div className="text-para">
-            <div className="headn">
-              <h2>Try GitHub on the command line</h2>
-              <p className="grey">
-                GitHub CLI brings GitHub to your terminal. Free and open source.
-              </p>
-              <button>Download for Windows</button>
-              <p className="blue-para">View installation instructions</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="footer-4">
-        <div className="footer-logo">
-          <img src="./img/GitHub-Logo-ee398b662d42.png" alt="GitHub Logo" />
-        </div>
-        <div className="head-2">
-          <div className="footer-heading-1">
-            <p className="bold">Product</p>
-            <p>Product</p>
-            <p>Feature</p>
-            <p>Security</p>
-            <p>Enterprise</p>
-            <p>Customer stories</p>
-            <p>Resources</p>
-          </div>
-          <div className="footer-heading-2">
-            <p className="bold">Platform</p>
-            <p>Developer API</p>
-            <p>Partner</p>
-            <p>Atom</p>
-            <p>Electron</p>
-            <p>GitHub Desktop</p>
-          </div>
-          <div className="footer-heading-3">
-            <p className="bold">Support</p>
-            <p>Help</p>
-            <p>Community forum</p>
-            <p>Professional support</p>
-            <p>Learning lab</p>
-          </div>
-        </div>
+      <div className="bootom-footer">
+        <ul className="footer-left">
+          <li>© 2024 GitHub, Inc.</li>
+          <li>
+            <a href="#">Terms</a>
+          </li>
+          <li>
+            <a href="#">Privacy</a>
+          </li>
+        </ul>
+        <ul className="footer-right">
+          <li>
+            {" "}
+            <a href="#">
+              <i className="fa-brands fa-square-facebook"></i>
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#">
+              <i className="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#">
+              <i className="fa-brands fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="#">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </>
   );
